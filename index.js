@@ -76,7 +76,7 @@ app.use((req,res,next)=>{
     //sdsd
 })
 
-
-app.listen("3001", function () {
+const PORT= process.env.PORT || 3001 ;//USAR el puerto adecuado
+app.listen(PORT, function () {
     console.log(`Adamos escuchando ${3001}`);
 })
